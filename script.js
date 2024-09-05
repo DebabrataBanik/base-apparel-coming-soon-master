@@ -14,11 +14,11 @@ form.addEventListener('submit', e => {
     error_icon.style.display = 'block';
     email.classList.add('error');
   }
-  else {
+  email.addEventListener('input', () => {
     error_msg.style.display = 'none';
     error_icon.style.display = 'none';
     email.classList.remove('error');
-  }
+  })
 
 })
 
