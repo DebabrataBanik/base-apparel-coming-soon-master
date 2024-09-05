@@ -15,31 +15,36 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
   <div class="wrapper">
     <main class="container">
+
       <section class="logo__container">
         <img src="images/logo.svg" alt="logo">
       </section>
-      <section class="hero-image__container">
+
+      <picture class="hero-image__container">
+        <source media="(min-width: 50rem)" srcset="images/hero-desktop.jpg">
         <img src="images/hero-mobile.jpg" alt="hero-image">
-      </section>
+      </picture>
+
       <section class="main-content">
         <h1> <span>WE'RE</span><br> COMING <br> SOON</h1>
         <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-        <div class="email__container">
-          <input type="email" placeholder="Email Address">
-          <img class="error" src="images/icon-error.svg" alt="icon-error">
+        <form class="email__container">
+          <input type="text" placeholder="Email Address">
+          <img class="error-icon" src="images/icon-error.svg" alt="icon-error">
           <button class="btn-submit">
             <img class="arrow" src="images/icon-arrow.svg" alt="icon-error">
           </button>
-        </div>
+        </form>
+        <p>Please provide a valid email</p>
       </section>
     </main>
   </div>
